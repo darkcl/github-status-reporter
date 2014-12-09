@@ -1,0 +1,21 @@
+{
+  "name": "mocha-github-reporter",
+  "version": "0.0.0",
+  "description": "Update github of status of unit tests",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "mocha",
+    "github",
+    "reporter"
+  ],
+  "author": "Dane Stuckel",
+  "license": "ISC",
+  "dependencies": {
+    "github": "^0.2.3",
+    "minimist": "^1.1.0",
+    "mocha": "^2.0.1"
+  }
+}
