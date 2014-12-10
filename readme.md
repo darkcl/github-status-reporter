@@ -13,7 +13,8 @@ npm install -g github-status-reporter
 
 ```bash
 export GITHUB_TOKEN=<github_token>
-github-status-reporter --user <repo_user> --repo <repo_name> --branch <branch_name> --state <failure|pending|success>
+github-status-reporter --user <repo_user> --repo <repo_name>
+  --branch <branch_name> --state <failure|pending|success>
 ```
 
 ###Example
@@ -22,7 +23,8 @@ To update github.com/TakenPilot/github-status-reporter to a success state
 
 ```bash
 export GITHUB_TOKEN=ABCDEFGHIJKLMNOPQRSTUVWXYZ
-github-status-reporter --user TakenPilot --repo github-status-reporter --branch master --state success
+github-status-reporter --user TakenPilot --repo github-status-reporter
+  --branch master --state success
 ```
 
 
@@ -32,15 +34,18 @@ To update github.com/TakenPilot/github-status-reporter to a pending state with e
 
 ```bash
 export GITHUB_TOKEN=ABCDEFGHIJKLMNOPQRSTUVWXYZ
-github-status-reporter --user TakenPilot --repo github-status-reporter --branch master --state success /
-  --target-url='http://github.com/TakenPilot/github-status-reporter' --description='Waiting for unit tests'
+github-status-reporter
+  --user TakenPilot --repo github-status-reporter
+  --branch master --state success
+  --target-url='http://github.com/TakenPilot/github-status-reporter'
+  --description='Waiting for unit tests'
 ```
 
 ##API
 
 ###Token
 
-Security Token of account that can access the repo and has enough permissions to change its status.  Can be set as an environment variable as `GITHUB_TOKEN`.
+Security Token of account that can access the repo and has enough permissions to change its status.  Can be set as an environment variable as GITHUB_TOKEN.
 
 `github-status-reporter --token ABCDE ...`
 
