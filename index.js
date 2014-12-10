@@ -1,7 +1,5 @@
 var argv = require('minimist')(process.argv.slice(2));
 
-console.log(argv);
-
 argv.token = argv.token || process.env.GITHUB_TOKEN;
 argv.sha = argv.sha || process.env.GITHUB_SHA;
 argv.user = argv.user || process.env.GITHUB_USER;
@@ -14,8 +12,11 @@ var query;
 var StatusReporter = require('./lib');
 var statusReporter = new StatusReporter(argv.token);
 statusReporter.update(argv, function (err, res) {
-  if (err) console.error(err);
-  else if (res && argv.debug) console.log(res);
+  if (err) {
+    console.error(err);
+  }  else if (res && argv.debug) {
+    console.log(res);
+  }
 });
 
 
