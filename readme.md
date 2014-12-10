@@ -3,6 +3,16 @@ Github Status Reporter
 
 Updates build status on Github from a script.
 
+[![Build Status](https://travis-ci.org/TakenPilot/github-status-reporter.svg?branch=master)](https://travis-ci.org/TakenPilot/github-status-reporter)
+
+[![Code Climate](https://codeclimate.com/github/TakenPilot/github-status-reporter/badges/gpa.svg)](https://codeclimate.com/github/TakenPilot/github-status-reporter)
+
+[![Coverage Status](https://img.shields.io/coveralls/TakenPilot/github-status-reporter.svg)](https://coveralls.io/r/TakenPilot/github-status-reporter?branch=master)
+
+[![Dependencies](https://david-dm.org/TakenPilot/github-status-reporter.svg?style=flat)](https://david-dm.org/TakenPilot/github-status-reporter.svg?style=flat)
+
+[![NPM version](https://badge.fury.io/js/github-status-reporter.svg)](http://badge.fury.io/js/github-status-reporter)
+
 ##Install
 
 ```bash
