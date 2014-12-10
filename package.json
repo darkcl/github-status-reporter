@@ -1,15 +1,25 @@
 {
-  "name": "mocha-github-reporter",
-  "version": "0.0.0",
-  "description": "Update github of status of unit tests",
-  "main": "index.js",
+  "name": "github-status-reporter",
+  "version": "0.2.0",
+  "description": "Update build status on github from command line",
+  "main": "lib/index.js",
+  "bin": "index.js",
+  "preferGlobal": true,
+  "repository": "http://github.com/TakenPilot/github-status-reporter.git",
   "scripts": {
-    "test": "mocha"
+    "test": "./node_modules/.bin/mocha -r blanket -R mocha-lcov-reporter | ./node_modules/coveralls/bin/coveralls.js"
+  },
+  "config": {
+    "blanket": {
+      "pattern": "index.js",
+      "data-cover-never": "node_modules"
+    }
   },
   "keywords": [
-    "mocha",
     "github",
-    "reporter"
+    "status",
+    "reporter",
+    "update"
   ],
   "author": "Dane Stuckel",
   "license": "ISC",
@@ -17,5 +27,13 @@
     "github": "^0.2.3",
     "minimist": "^1.1.0",
     "mocha": "^2.0.1"
+  },
+  "devDependencies": {
+    "blanket": "^1.1.6",
+    "chai": "^1.10.0",
+    "coveralls": "^2.11.2",
+    "mocha": "^2.0.1",
+    "mocha-lcov-reporter": "0.0.1",
+    "sinon": "^1.12.1"
   }
 }
