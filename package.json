@@ -1,9 +1,9 @@
 {
   "name": "github-status-reporter",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Update build status on github from command line",
   "main": "lib/index.js",
-  "bin": "index.js",
+  "bin": "bin/cli",
   "preferGlobal": true,
   "repository": "http://github.com/TakenPilot/github-status-reporter.git",
   "scripts": {

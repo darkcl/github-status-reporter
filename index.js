@@ -1,5 +1,7 @@
 var argv = require('minimist')(process.argv.slice(2));
 
+console.log(argv);
+
 argv.token = argv.token || process.env.GITHUB_TOKEN;
 argv.sha = argv.sha || process.env.GITHUB_SHA;
 argv.user = argv.user || process.env.GITHUB_USER;
