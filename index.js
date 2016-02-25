@@ -7,6 +7,7 @@ argv.repo = argv.repo || process.env.GITHUB_REPO;
 argv.state = argv.state || process.env.GITHUB_STATE;
 argv['target-url'] = argv['target-url'] || process.env.GITHUB_TARGET_URL;
 argv.description = argv.description || process.env.GITHUB_DESCRIPTION;
+argv.context = argv.context || process.env.GITHUB_CONTEXT;
 
 var query;
 var StatusReporter = require('./lib');
@@ -18,7 +19,3 @@ statusReporter.update(argv, function (err, res) {
     console.log(res);
   }
 });
-
-
-
-

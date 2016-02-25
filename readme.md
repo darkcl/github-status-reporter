@@ -97,11 +97,14 @@ Optional message along with the status.
 
 `github-status-reporter --description 'tests failed' ...`
 
+###Context
+
+Optional string label to differentiate this status from the status of other systems. Can be set as an environment variable as GITHUB_CONTEXT.
+
+`github-status-reporter --context 'api' ...`
+
 ###Target-Url
 
 Optional link for when someone clicks on the build status.
 
 `github-status-reporter --target-url 'jenkins.example.com/build/1524' ...`
-
-
-
