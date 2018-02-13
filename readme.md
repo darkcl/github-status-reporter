@@ -55,13 +55,17 @@ github-status-reporter
 
 ### Token
 
-Security Token of account that can access the repo and has enough permissions to change its status.  Can be set as an environment variable as GITHUB_TOKEN.
+Security Token of account that can access the repo and has enough permissions to change its status.  
+
+Can be set as an environment variable as `GITHUB_TOKEN`.
 
 `github-status-reporter --token ABCDE ...`
 
 ### User
 
-The user or organisation of the repo, so `johnsmith/some-repo` would be.  Can be set as an environment variable as GITHUB_USER.
+The user or organisation of the repo, so `johnsmith/some-repo` would be.  
+
+Can be set as an environment variable as `GITHUB_USER`.
 
 `github-status-reporter --user johnsmith --repo some-repo ...`
 
@@ -73,7 +77,9 @@ The repo to update
 
 ### Sha
 
-Either sha or branch are required to identify the commit to set the status of.  If sha is not 40 characters, it's assumed to be a branch name.  Can be set as an environment variable as GITHUB_SHA.
+Either sha or branch are required to identify the commit to set the status of.  If sha is not 40 characters, it's assumed to be a branch name.  
+
+Can be set as an environment variable as `GITHUB_SHA`.
 
 `github-status-reporter --sha 4eb9e0fd807f95473dc7207c556014215c40ec3b ...`
 
@@ -81,13 +87,17 @@ Either sha or branch are required to identify the commit to set the status of.  
 
 ### Branch
 
-Either Sha or Branch are required to identify the commit to set the status of.  Can be set as an environment variable as GITHUB_BRANCH.
+Either Sha or Branch are required to identify the commit to set the status of.  
+
+Can be set as an environment variable as `GITHUB_BRANCH`.
 
 `github-status-reporter --branch master ...`
 
 ### State
 
-The state to set the build status to, i.e., pending, success, failure, etc.  Can be set as an environment variable as GITHUB_STATE.
+The state to set the build status to, i.e., pending, success, failure, etc.  
+
+Can be set as an environment variable as `GITHUB_STATE`.
 
 `github-status-reporter --state success ...`
 
@@ -99,7 +109,9 @@ Optional message along with the status.
 
 ### Context
 
-Optional string label to differentiate this status from the status of other systems. Can be set as an environment variable as GITHUB_CONTEXT.
+Optional string label to differentiate this status from the status of other systems. 
+
+Can be set as an environment variable as `GITHUB_CONTEXT`.
 
 `github-status-reporter --context 'api' ...`
 
@@ -113,6 +125,10 @@ Optional link for when someone clicks on the build status.
 
 Host URL for github enterprise, default is `api.github.com`
 
+Can be set as an environment variable `GITHUB_API_ENDPOINT`.
+
 ### Prefix
 
 Api prefix for github enterprise, default empty string
+
+Can be set as an environment variable `GITHUB_API_PREFIX`.
